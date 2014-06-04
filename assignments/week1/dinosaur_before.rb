@@ -45,17 +45,16 @@
 
 class Dinosaur
   def initialize(type, favorite_snack)
-    # Make these variables "instance variables".
-    type = type
-    favorite_snack = favorite_snack
-    meals_eaten_count = 10
+    @type = type
+    @favorite_snack = favorite_snack
+    @meals_eaten_count = 10
   end
 
-  def type=()
-    @type = new_type  # where does this new_type variable come from? fix this method!
+  def type=(new_type)
+    @type = new_type
   end
 
-  def tipe
+  def type
     @type
   end
 
@@ -76,6 +75,6 @@ class Dinosaur
   end
 
   def snack
-    self.meals_eaten_count += 2
+    self.meals_eaten_count += 1
   end
 end
