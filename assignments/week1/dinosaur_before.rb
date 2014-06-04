@@ -50,29 +50,9 @@ class Dinosaur
     @meals_eaten_count = 10
   end
 
-  def type=(new_type)
-    @type = new_type
-  end
-
-  def type
-    @type
-  end
-
-  def favorite_snack=(fav_snack)
-    @favorite_snack = fav_snack
-  end
-
-  def favorite_snack
-    @favorite_snack
-  end
-
-  def meals_eaten_count=(num)
-    @meals_eaten_count = num
-  end
-
-  def meals_eaten_count
-    @meals_eaten_count
-  end
+  attr_accessor :type
+  attr_accessor :favorite_snack
+  attr_accessor :meals_eaten_count 
 
   def snack
     self.meals_eaten_count += 1
